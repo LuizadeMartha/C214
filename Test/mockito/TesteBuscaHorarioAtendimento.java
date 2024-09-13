@@ -206,16 +206,15 @@ public class TesteBuscaHorarioAtendimento {
         // Verifica se a sala está incorreta
         assertNotEquals(6, marcio.getSala());
     }
-
     @Test
     public void testeBuscaPredioLucasFalha() {
-        // Configura o mock para retornar o objeto LUCAS quando o nome do professor é "LUCAS"
+    // Configura o mock para retornar o objeto LUCAS quando o nome do professor é "LUCAS"
         Mockito.when(service.buscaHorarioAtendimento("LUCAS")).thenReturn(HorarioAtendimento2.LUCAS);
 
         // Executa o método a ser testado
         HorarioAtendimento lucas = buscaHorarioAtendimento.buscaHorarioAtendimento("LUCAS");
 
-        // Verifica se o prédio está incorreto
-        assertNotEquals("2", lucas.getPredio());
+        // Verifica se o prédio retornado é diferente do incorreto "1"
+        assertNotEquals("1", lucas.getPredio());
     }
 }

@@ -3,11 +3,11 @@ package Main;
 public class HorarioAtendimento {
 
     // Atributos da classe que armazenam as informações do horário de atendimento
-    private String nomeDoProfessor;  // Nome do professor
-    private String horarioAtendimento;  // Horário de atendimento
-    private String periodo;  // Período (Integral ou Noturno)
-    private int sala;  // Número da sala de atendimento
-    private String predio;  // Prédio onde a sala está localizada
+    private String nomeDoProfessor;
+    private String horarioAtendimento;
+    private String periodo;  
+    private int sala;  
+    private String predio;  
 
     // Construtor da classe que inicializa todos os atributos
     public HorarioAtendimento(
